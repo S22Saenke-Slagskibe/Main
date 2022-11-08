@@ -111,9 +111,21 @@ boolean J10=false;
 
 
 
+boolean flower=false;
+boolean tidy_up=false;
+boolean beer=false;
+boolean mows_lawn=false;
+boolean money=false;
+boolean clothes=false;
+boolean mom=false;
+boolean dad=false;
+boolean sister=false;
+boolean moneybox=false;
+boolean clothesbox=false;
 PImage fire;                                   /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
                                 for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man 
                                 lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
+
 void setup() {
   fire=loadImage("fire.png");
                                               
@@ -124,12 +136,13 @@ void setup() {
   strokeWeight(2);
   //creative game title design :
  PImage fire= loadImage("fire.png");
+/* PImage ocean_background=loadImage("ocean_background.png");
+   image(ocean_background,0,0);*/  // nie dobrze to wyglada
  tint(255,127);// 127-50% opacity
   PImage ocean2= loadImage("ocean2.png");
   ocean2.resize(1700, 0);
   image(ocean2, 100, 230);   
    tint(255,255);//255-back to 100% opacity
-   
  PImage goodwave= loadImage("good_wave.png");
   goodwave.resize(1000, 0);
   image(goodwave, 650, -30);
@@ -171,55 +184,14 @@ void game_board() {
     line(i, 0, i, 750);
     fill(0);
     popMatrix();
+    
+     for(int j=1;j<10;j++){
     textSize(50);
-    //bane på venstre side
-    text("1", 55, 280);
-    text("2", 55, 355);
-    text("3", 55, 430);
-    text("4", 55, 505);
-    text("5", 55, 580);
-    text("6", 55, 655);
-    text("7", 55, 730);
-    text("8", 55, 805);
-    text("9", 55, 880);
-    text("10", 40, 955);
-    //bane på højre side
-    text("1", 1000, 280);
-    text("2", 1000, 355);
-    text("3", 1000, 430);
-    text("4", 1000, 505);
-    text("5", 1000, 580);
-    text("6", 1000, 655);
-    text("7", 1000, 730);
-    text("8", 1000, 805);
-    text("9", 1000, 880);
-    text("10", 985, 955);
-
+       text(j,55,205+j*75);
+     }
     textSize(50);
-    text("A", 125, 225);
-    text("B", 200, 225);
-    text("C", 275, 225);
-    text("D", 350, 225);
-    text("E", 425, 225);
-    text("F", 500, 225);
-    text("G", 575, 225);
-    text("H", 650, 225);
-    text("I", 725, 225);
-    text("J", 800, 225);
-    pushMatrix();
-    translate(950, 0);
-    text("A", 125, 225);
-    text("B", 200, 225);
-    text("C", 275, 225);
-    text("D", 350, 225);
-    text("E", 425, 225);
-    text("F", 500, 225);
-    text("G", 575, 225);
-    text("H", 650, 225);
-    text("I", 725, 225);
-    text("J", 800, 225);
-    popMatrix();
-  }
+       text("10",42,205+(75*10));       
+}
 }
 
 
