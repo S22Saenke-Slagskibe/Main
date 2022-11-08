@@ -111,36 +111,46 @@ boolean J10=false;
 
 
 
-
+boolean flower=false;
+boolean tidy_up=false;
+boolean beer=false;
+boolean mows_lawn=false;
+boolean money=false;
+boolean clothes=false;
+boolean mom=false;
+boolean dad=false;
+boolean sister=false;
+boolean moneybox=false;
+boolean clothesbox=false;
 PImage fire;                                   /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
-                                for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man 
-                                lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
+ for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man
+ lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
 
 void setup() {
   fire=loadImage("fire.png");
-                                              
+
   background(/*220, 240, 100*/255);
   size(1920, 1080);
   //fullScreen();
   stroke(0);
   strokeWeight(2);
   //creative game title design :
- PImage fire= loadImage("fire.png");
-/* PImage ocean_background=loadImage("ocean_background.png");
+  PImage fire= loadImage("fire.png");
+  /* PImage ocean_background=loadImage("ocean_background.png");
    image(ocean_background,0,0);*/  // nie dobrze to wyglada
- tint(255,127);// 127-50% opacity
+  tint(255, 127);// 127-50% opacity
   PImage ocean2= loadImage("ocean2.png");
   ocean2.resize(1700, 0);
-  image(ocean2, 100, 230);   
-   tint(255,255);//255-back to 100% opacity
- PImage goodwave= loadImage("good_wave.png");
+  image(ocean2, 100, 230);
+  tint(255, 255);//255-back to 100% opacity
+  PImage goodwave= loadImage("good_wave.png");
   goodwave.resize(1000, 0);
   image(goodwave, 650, -30);
-   tint(255,127);// 127-50% opacity
+  tint(255, 127);// 127-50% opacity
   PImage ocean1= loadImage("ocean1.png");
   ocean1.resize(1700, 0);
   image(ocean1, 1050, 230);
-   tint(255,255);//255-back to 100% opacity
+  tint(255, 255);//255-back to 100% opacity
   fill(0);
   textSize(100);
   text("Battle Shi    s", width/2.8, 100);
@@ -160,6 +170,7 @@ void draw() {
 
 
 void game_board() {
+  //                                                                      left gridsystem
   for (int i = 0; i < 751; i = i + 75) {
     line(100, 305, 175, 305);
     pushMatrix();
@@ -168,21 +179,55 @@ void game_board() {
     line(i, 0, i, 750);
     fill(0);
     popMatrix();
+    //                                                                    right gridsystem
     pushMatrix();
     translate(1050, 230);
     line(0, i, 750, i);
     line(i, 0, i, 750);
     fill(0);
     popMatrix();
-    
-     for(int j=1;j<10;j++){
+
+    //                                                                    leftside Numbers
+    for (int k=1; k<10; k++) {
+      textSize(50);
+      text(k, 55, 205+k*75);
+    }
     textSize(50);
-       text(j,55,205+j*75);
-     }
+    text("10", 42, 205+(75*10));
+  }
+
+  //                                                                      rightside numbers
+  pushMatrix();
+  translate(950, 0);
+  for (int k=1; k<10; k++) {
     textSize(50);
-       text("10",42,205+(75*10));       
+    text(k, 55, 205+k*75);
+  }
+  textSize(50);
+  text("10", 42, 205+(75*10));
+  popMatrix();
+
+  //                                                                      text on left side
+  for (char k=1; k<10; k++) {
+    textSize(50);
+    text(char(k+64), 50+k*75, 225);
+  }
+  textSize(50);
+  text("J", 50+10*75, 225);
+
+  //                                                                      text on right side
+  pushMatrix();
+  translate(950, 0);
+  for (char k=1; k<10; k++) {
+    textSize(50);
+    text(char(k+64), 50+k*75, 225);
+  }
+  textSize(50);
+  text("J", 50+10*75, 225);
+  popMatrix();
 }
-}
+
+
 
 
 void mouseClicked() {
@@ -609,31 +654,31 @@ void mouseClicked() {
   /////////////////////////////////////////////////////////////    A FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //A1 fire
   if (A1) {
-   //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
+    //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
     fire.resize(130, 0);
     image(fire, 80, 230);
   }
   //A2 fire
   if (A2) {
-     //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
+    //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
     fire.resize(130, 0);
     image(fire, 80, 230+(75*1));
   }
   //A3 fire
   if (A3) {
-      //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");            ...osv
+    //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");            ...osv
     fire.resize(130, 0);
     image(fire, 80, 230+(75*2));
   }
   //A4 fire
   if (A4) {
-   
+
     fire.resize(130, 0);
     image(fire, 80, 230+(75*3));
   }
   //A5 fire
   if (A5) {
-   
+
     fire.resize(130, 0);
     image(fire, 80, 230+(75*4));
   }
