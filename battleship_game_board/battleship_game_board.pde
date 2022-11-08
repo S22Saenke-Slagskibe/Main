@@ -1,127 +1,115 @@
 
-boolean A1=false;
-boolean A2=false;
-boolean A3=false;
-boolean A4=false;
-boolean A5=false;
-boolean A6=false;
-boolean A7=false;
-boolean A8=false;
-boolean A9=false;
-boolean A10=false;
+int a1= 1;
+int a2= 1;
+int a3= 1;
+int a4= 1;
+int a5= 1;
+int a6= 0;
+int a7= 0;
+int a8= 0;
+int a9= 0;
+int a10= 0;
 
-boolean B1=false;
-boolean B2=false;
-boolean B3=false;
-boolean B4=false;
-boolean B5=false;
-boolean B6=false;
-boolean B7=false;
-boolean B8=false;
-boolean B9=false;
-boolean B10=false;
+int b1= 0;
+int b2= 0;
+int b3= 0;
+int b4= 0;
+int b5= 0;
+int b6= 0;
+int b7= 0;
+int b8= 0;
+int b9= 0;
+int b10= 0;
 
-boolean C1=false;
-boolean C2=false;
-boolean C3=false;
-boolean C4=false;
-boolean C5=false;
-boolean C6=false;
-boolean C7=false;
-boolean C8=false;
-boolean C9=false;
-boolean C10=false;
+int c1= 0;
+int c2= 0;
+int c3= 0;
+int c4= 0;
+int c5= 0;
+int c6= 0;
+int c7= 0;
+int c8= 0;
+int c9= 0;
+int c10= 0;
 
-boolean D1=false;
-boolean D2=false;
-boolean D3=false;
-boolean D4=false;
-boolean D5=false;
-boolean D6=false;
-boolean D7=false;
-boolean D8=false;
-boolean D9=false;
-boolean D10=false;
+int d1= 0;
+int d2= 0;
+int d3= 0;
+int d4= 0;
+int d5= 0;
+int d6= 0;
+int d7= 0;
+int d8= 0;
+int d9= 0;
+int d10= 0;
 
-boolean E1=false;
-boolean E2=false;
-boolean E3=false;
-boolean E4=false;
-boolean E5=false;
-boolean E6=false;
-boolean E7=false;
-boolean E8=false;
-boolean E9=false;
-boolean E10=false;
+int e1= 0;
+int e2= 0;
+int e3= 0;
+int e4= 0;
+int e5= 0;
+int e6= 0;
+int e7= 0;
+int e8= 0;
+int e9= 0;
+int e10= 0;
 
-boolean F1=false;
-boolean F2=false;
-boolean F3=false;
-boolean F4=false;
-boolean F5=false;
-boolean F6=false;
-boolean F7=false;
-boolean F8=false;
-boolean F9=false;
-boolean F10=false;
+int f1= 0;
+int f2= 0;
+int f3= 0;
+int f4= 0;
+int f5= 0;
+int f6= 0;
+int f7= 0;
+int f8= 0;
+int f9= 0;
+int f10= 0;
 
-boolean G1=false;
-boolean G2=false;
-boolean G3=false;
-boolean G4=false;
-boolean G5=false;
-boolean G6=false;
-boolean G7=false;
-boolean G8=false;
-boolean G9=false;
-boolean G10=false;
+int g1= 0;
+int g2= 0;
+int g3= 0;
+int g4= 0;
+int g5= 0;
+int g6= 0;
+int g7= 0;
+int g8= 0;
+int g9= 0;
+int g10= 0;
 
-boolean H1=false;
-boolean H2=false;
-boolean H3=false;
-boolean H4=false;
-boolean H5=false;
-boolean H6=false;
-boolean H7=false;
-boolean H8=false;
-boolean H9=false;
-boolean H10=false;
+int h1= 0;
+int h2= 0;
+int h3= 0;
+int h4= 0;
+int h5= 0;
+int h6= 0;
+int h7= 0;
+int h8= 0;
+int h9= 0;
+int h10= 0;
 
-boolean I1=false;
-boolean I2=false;
-boolean I3=false;
-boolean I4=false;
-boolean I5=false;
-boolean I6=false;
-boolean I7=false;
-boolean I8=false;
-boolean I9=false;
-boolean I10=false;
+int i1= 0;
+int i2= 0;
+int i3= 0;
+int i4= 0;
+int i5= 0;
+int i6= 0;
+int i7= 0;
+int i8= 0;
+int i9= 0;
+int i10= 0;
 
-boolean J1=false;
-boolean J2=false;
-boolean J3=false;
-boolean J4=false;
-boolean J5=false;
-boolean J6=false;
-boolean J7=false;
-boolean J8=false;
-boolean J9=false;
-boolean J10=false;
+int j1= 0;
+int j2= 0;
+int j3= 0;
+int j4= 0;
+int j5= 0;
+int j6= 0;
+int j7= 0;
+int j8= 0;
+int j9= 0;
+int j10= 0;
 
 
-
-boolean flower=false;
-boolean tidy_up=false;
-boolean beer=false;
-boolean mows_lawn=false;
-boolean money=false;
-boolean clothes=false;
-boolean mom=false;
-boolean dad=false;
-boolean sister=false;
-boolean moneybox=false;
-boolean clothesbox=false;
 PImage fire;                                   /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
  for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man
  lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
@@ -234,935 +222,929 @@ void mouseClicked() {
   float x=mouseX;
   float y=mouseY;
   /////////////////////////////////////////////////////     A  CLICK BOXES     ////////////////////////////////////////////////////////
-  //A1
+  //a1
   if ((x>100&&x<100+(75*1))&&(y>230&&y<230+(75*1))) {
-    A1=true;
+a1=a1+2;
   }
-  //A2
+  //a2
   if ((x>100&&x<100+(75*1))&&(y>230+(75*1)&&y<230+(75*2))) {
-    A2=true;
+ a2=a2+2;
   }
-
-  //A3
+  //a3
   if ((x>100&&x<100+(75*1))&&(y>230+(75*2)&&y<230+(75*3))) {
-    A3=true;
+a3=a3+2;
   }
-  //A4
+  //a4
   if ((x>100&&x<100+(75*1))&&(y>230+(75*3)&&y<230+(75*4))) {
-    A4=true;
+a4=a4+2;
   }
-
-  //A5
+  //a5
   if ((x>100&&x<100+(75*1))&&(y>230+(75*4)&&y<230+(75*5))) {
-    A5=true;
+a5=a5+2;
   }
-  //A6
+  //a6
   if ((x>100&&x<100+(75*1))&&(y>230+(75*5)&&y<230+(75*6))) {
-    A6=true;
+a6=a6+2;
   }
-  //A7
+  //a7
   if ((x>100&&x<100+(75*1))&&(y>230+(75*6)&&y<230+(75*7))) {
-    A7=true;
+ a7=a7+2;
   }
-  //A8
+  //a8
   if ((x>100&&x<100+(75*1))&&(y>230+(75*7)&&y<230+(75*8))) {
-    A8=true;
+ a8=a8+2;
   }
-  //A9
+  //a9
   if ((x>100&&x<100+(75*1))&&(y>230+(75*8)&&y<230+(75*9))) {
-    A9=true;
+  a9=a9+2;
   }
-  //A10
+  //a10
   if ((x>100&&x<100+(75*1))&&(y>230+(75*9)&&y<230+(75*10))) {
-    A10=true;
+a10=a10+2;
   }
-
   /////////////////////////////////////////////////////     B  CLICK BOXES     ////////////////////////////////////////////////////////
-  //B1
+  //b1
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230&&y<230+(75*1))) {
-    B1=true;
+b1=b1+2;
   }
-  //B2
+  //b2
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*1)&&y<230+(75*2))) {
-    B2=true;
+ b2=b2+2;
   }
-
-  //B3
+  //b3
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*2)&&y<230+(75*3))) {
-    B3=true;
+b3=b3+2;
   }
-  //B4
+  //b4
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*3)&&y<230+(75*4))) {
-    B4=true;
+ b4=b4+2;
   }
-
-  //B5
+  //b5
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*4)&&y<230+(75*5))) {
-    B5=true;
+  b5=b5+2;
   }
-  //B6
+  //b6
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*5)&&y<230+(75*6))) {
-    B6=true;
+  b6=b6+2;
   }
-  //B7
+  //b7
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*6)&&y<230+(75*7))) {
-    B7=true;
+    b7=b7+2;
   }
-  //B8
+  //b8
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*7)&&y<230+(75*8))) {
-    B8=true;
+    b8=b8+2;
   }
-  //B9
+  //b9
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*8)&&y<230+(75*9))) {
-    B9=true;
+    b9=b9+2;
   }
-  //B10
+  //b10
   if ((x>100+(75*1)&&x<100+(75*2))&&(y>230+(75*9)&&y<230+(75*10))) {
-    B10=true;
+    b10=b10+2;
   }
   /////////////////////////////////////////////////////     C   CLICK BOXES     ////////////////////////////////////////////////////////
-  //C1
+  //c1
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230&&y<230+(75*1))) {
-    C1=true;
+    c1=c1+2;
   }
-  //C2
+  //c2
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*1)&&y<230+(75*2))) {
-    C2=true;
+    c2=c2+2;
   }
-  //C3
+  //c3
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*2)&&y<230+(75*3))) {
-    C3=true;
+    c3=c3+2;
   }
-  //C4
+  //c4
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*3)&&y<230+(75*4))) {
-    C4=true;
+    c4=c4;
   }
-  //C5
+  //c5
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*4)&&y<230+(75*5))) {
-    C5=true;
+    c5=c5+2;
   }
-  //C6
+  //c6
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*5)&&y<230+(75*6))) {
-    C6=true;
+    c6=c6+2;
   }
-  //C7
+  //c7
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*6)&&y<230+(75*7))) {
-    C7=true;
+    c7=c7+2;
   }
-  //C8
+  //c8
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*7)&&y<230+(75*8))) {
-    C8=true;
+    c8=c8+2;
   }
-  //C9
+  //c9
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*8)&&y<230+(75*9))) {
-    C9=true;
+    c9=c9+2;
   }
-  //C10
+  //c10
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*9)&&y<230+(75*10))) {
-    C10=true;
+    c10=c10+2;
   }
-
   /////////////////////////////////////////////////////     D  CLICK BOXES     ////////////////////////////////////////////////////////
-  //D1
+  //d1
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230&&y<230+(75*1))) {
-    D1=true;
+    d1=d1+2;
   }
-  //D2
+  //d2
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*1)&&y<230+(75*2))) {
-    D2=true;
+    d2=d2+2;
   }
-  //D3
+  //d3
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*2)&&y<230+(75*3))) {
-    D3=true;
+    d3=d3+2;
   }
-  //D4
+  //d4
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*3)&&y<230+(75*4))) {
-    D4=true;
+    d4=d4+2;
   }
-  //D5
+  //d5
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*4)&&y<230+(75*5))) {
-    D5=true;
+    d5=d5+2;
   }
-  //D6
+  //d6
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*5)&&y<230+(75*6))) {
-    D6=true;
+    d6=d6+2;
   }
-  //D7
+  //d7
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*6)&&y<230+(75*7))) {
-    D7=true;
+    d7=d7+2;
   }
-  //D8
+  //d8
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*7)&&y<230+(75*8))) {
-    D8=true;
+    d8=d8+2;
   }
-  //D9
+  //d9
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*8)&&y<230+(75*9))) {
-    D9=true;
+    d9=d9+2;
   }
-  //D10
+  //d10
   if ((x>100+(75*3)&&x<100+(75*4))&&(y>230+(75*9)&&y<230+(75*10))) {
-    D10=true;
+    d10=d10+2;
   }
   /////////////////////////////////////////////////////     E  CLICK BOXES     ////////////////////////////////////////////////////////
-  //E1
+  //e1
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230&&y<230+(75*1))) {
-    E1=true;
+    e1=e1+2;
   }
-  //E2
+  //e2
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*1)&&y<230+(75*2))) {
-    E2=true;
+    e2=e2+2;
   }
-  //E3
+  //e3
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*2)&&y<230+(75*3))) {
-    E3=true;
+    e3=e3+2;
   }
-  //E4
+  //e4
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*3)&&y<230+(75*4))) {
-    E4=true;
+    e4=e4+2;
   }
-  //E5
+  //e5
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*4)&&y<230+(75*5))) {
-    E5=true;
+    e5=e5+2;
   }
-  //E6
+  //e6
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*5)&&y<230+(75*6))) {
-    E6=true;
+    e6=e6+2;
   }
-  //E7
+  //e7
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*6)&&y<230+(75*7))) {
-    E7=true;
+    e7=e7+2;
   }
-  //E8
+  //e8
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*7)&&y<230+(75*8))) {
-    E8=true;
+    e8=e8+2;
   }
-  //E9
+  //e9
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*8)&&y<230+(75*9))) {
-    E9=true;
+    e9=e9+2;
   }
-  //E10
+  //e10
   if ((x>100+(75*4)&&x<100+(75*5))&&(y>230+(75*9)&&y<230+(75*10))) {
-    E10=true;
+    e10=e10+2;
   }
   /////////////////////////////////////////////////////     F  CLICK BOXES     ////////////////////////////////////////////////////////
-  //F1
+  //f1
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230&&y<230+(75*1))) {
-    F1=true;
+    f1=f1+2;
   }
-  //F2
+  //f2
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*1)&&y<230+(75*2))) {
-    F2=true;
+    f2=f2+2;
   }
-  //F3
+  //f3
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*2)&&y<230+(75*3))) {
-    F3=true;
+    f3=f3+2;
   }
-  //F4
+  //f4
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*3)&&y<230+(75*4))) {
-    F4=true;
+    f4=f4+2;
   }
-  //F5
+  //f5
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*4)&&y<230+(75*5))) {
-    F5=true;
+    f5=f5+2;
   }
-  //F6
+  //f6
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*5)&&y<230+(75*6))) {
-    F6=true;
+    f6=f6+2;
   }
-  //F7
+  //f7
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*6)&&y<230+(75*7))) {
-    F7=true;
+    f7=f7+2;
   }
-  //F8
+  //f8
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*7)&&y<230+(75*8))) {
-    F8=true;
+    f8=f8+2;
   }
-  //F9
+  //f9
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*8)&&y<230+(75*9))) {
-    F9=true;
+    f9=f9+2;
   }
-  //F10
+  //f10
   if ((x>100+(75*5)&&x<100+(75*6))&&(y>230+(75*9)&&y<230+(75*10))) {
-    F10=true;
+    f10=f10+2;
   }
   /////////////////////////////////////////////////////     G  CLICK BOXES     ////////////////////////////////////////////////////////
-  //G1
+  //g1
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230&&y<230+(75*1))) {
-    G1=true;
+    g1=g1+2;
   }
-  //G2
+  //g2
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*1)&&y<230+(75*2))) {
-    G2=true;
+    g2=g2+2;
   }
-  //G3
+  //g3
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*2)&&y<230+(75*3))) {
-    G3=true;
+    g3=g3+2;
   }
-  //G4
+  //g4
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*3)&&y<230+(75*4))) {
-    G4=true;
+    g4=g4+2;
   }
-  //G5
+  //g5
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*4)&&y<230+(75*5))) {
-    G5=true;
+    g5=g5+2;
   }
-  //G6
+  //g6
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*5)&&y<230+(75*6))) {
-    G6=true;
+    g6=g6+2;
   }
-  //G7
+  //g7
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*6)&&y<230+(75*7))) {
-    G7=true;
+    g7=g7+2;
   }
-  //G8
+  //g8
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*7)&&y<230+(75*8))) {
-    G8=true;
+    g8=g8+2;
   }
-  //G9
+  //g9
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*8)&&y<230+(75*9))) {
-    G9=true;
+    g9=g9+2;
   }
-  //G10
+  //g10
   if ((x>100+(75*6)&&x<100+(75*7))&&(y>230+(75*9)&&y<230+(75*10))) {
-    G10=true;
+    g10=g10+2;
   }
   /////////////////////////////////////////////////////     H  CLICK BOXES     ////////////////////////////////////////////////////////
-  //H1
+  //h1
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230&&y<230+(75*1))) {
-    H1=true;
+    h1=h1+2;
   }
-  //H2
+  //h2
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*1)&&y<230+(75*2))) {
-    H2=true;
+    h2=h2+2;
   }
-  //H3
+  //h3
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*2)&&y<230+(75*3))) {
-    H3=true;
+    h3=h3+2;
   }
-  //H4
+  //h4
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*3)&&y<230+(75*4))) {
-    H4=true;
+    h4=h4+2;
   }
-  //H5
+  //h5
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*4)&&y<230+(75*5))) {
-    H5=true;
+    h5=h5+2;
   }
-  //H6
+  //h6
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*5)&&y<230+(75*6))) {
-    H6=true;
+    h6=h6+2;
   }
-  //H7
+  //h7
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*6)&&y<230+(75*7))) {
-    H7=true;
+    h7=h7+2;
   }
-  //H8
+  //h8
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*7)&&y<230+(75*8))) {
-    H8=true;
+    h8=h8+2;
   }
-  //H9
+  //h9
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*8)&&y<230+(75*9))) {
-    H9=true;
+    h9=h9+2;
   }
-  //H10
+  //h10
   if ((x>100+(75*7)&&x<100+(75*8))&&(y>230+(75*9)&&y<230+(75*10))) {
-    H10=true;
+    h10=h10+2;
   }
   /////////////////////////////////////////////////////     I  CLICK BOXES     ////////////////////////////////////////////////////////
-  //I1
+  //i1
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230&&y<230+(75*1))) {
-    I1=true;
+    i1=i1+2;
   }
-  //I2
+  //i2
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*1)&&y<230+(75*2))) {
-    I2=true;
+    i2=i2+2;
   }
-  //I3
+  //i3
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*2)&&y<230+(75*3))) {
-    I3=true;
+    i3=i3+2;
   }
-  //I4
+  //i4
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*3)&&y<230+(75*4))) {
-    I4=true;
+    i4=i4+2;
   }
-  //I5
+  //i5
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*4)&&y<230+(75*5))) {
-    I5=true;
+    i5=i5+2;
   }
-  //I6
+  //i6
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*5)&&y<230+(75*6))) {
-    I6=true;
+    i6=i6+2;
   }
-  //I7
+  //i7
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*6)&&y<230+(75*7))) {
-    I7=true;
+    i7=i7+2;
   }
-  //I8
+  //i8
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*7)&&y<230+(75*8))) {
-    I8=true;
+    i8=i8+2;
   }
-  //I9
+  //i9
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*8)&&y<230+(75*9))) {
-    I9=true;
+    i9=i9+2;
   }
-  //I10
+  //i10
   if ((x>100+(75*8)&&x<100+(75*9))&&(y>230+(75*9)&&y<230+(75*10))) {
-    I10=true;
+    i10=i10+2;
   }
   /////////////////////////////////////////////////////     J  CLICK BOXES     ////////////////////////////////////////////////////////
-  //J1
+  //j1
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230&&y<230+(75*1))) {
-    J1=true;
+    j1=j1+2;
   }
-  //J2
+  //j2
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*1)&&y<230+(75*2))) {
-    J2=true;
+    j2=j2+2;
   }
-  //J3
+  //j3
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*2)&&y<230+(75*3))) {
-    J3=true;
+    j3=j3+2;
   }
-  //J4
+  //j4
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*3)&&y<230+(75*4))) {
-    J4=true;
+    j4=j4+2;
   }
-  //J5
+  //j5
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*4)&&y<230+(75*5))) {
-    J5=true;
+    j5=j5+2;
   }
-  //J6
+  //j6
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*5)&&y<230+(75*6))) {
-    J6=true;
+    j6=j6+2;
   }
-  //J7
+  //j7
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*6)&&y<230+(75*7))) {
-    J7=true;
+    j7=j7+2;
   }
-  //J8
+  //j8
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*7)&&y<230+(75*8))) {
-    J8=true;
+    j8=j8+2;
   }
-  //J9
+  //j9
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*8)&&y<230+(75*9))) {
-    J9=true;
+    j9=j9+2;
   }
-  //J10
+  //j10
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*9)&&y<230+(75*10))) {
-    J10=true;
+    j10=j10+2;
   }
 
 
   /////////////////////////////////////////////////////////////    A FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //A1 fire
-  if (A1) {
+  if (a1==3) {
     //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
     fire.resize(130, 0);
     image(fire, 80, 230);
   }
   //A2 fire
-  if (A2) {
+  if (a2==3) {
     //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");
     fire.resize(130, 0);
     image(fire, 80, 230+(75*1));
   }
   //A3 fire
-  if (A3) {
+  if (a3==3) {
     //          eksempel jeg snakker om i linje 125;          PImage fire=loadImage("fire.png");            ...osv
     fire.resize(130, 0);
     image(fire, 80, 230+(75*2));
   }
   //A4 fire
-  if (A4) {
+  if (a4==3) {
 
     fire.resize(130, 0);
     image(fire, 80, 230+(75*3));
   }
   //A5 fire
-  if (A5) {
+  if (a5==3) {
 
     fire.resize(130, 0);
     image(fire, 80, 230+(75*4));
   }
   //A6 fire
-  if (A6) {
+  if (a6==3) {
     fire.resize(130, 0);
     image(fire, 80, 230+(75*5));
   }
   //A7 fire
-  if (A7) {
+  if (a7==3) {
     fire.resize(130, 0);
     image(fire, 80, 230+(75*6));
   }
   //A8 fire
-  if (A8) {
+  if (a8==3) {
     fire.resize(130, 0);
     image(fire, 80, 230+(75*7));
   }
   //A9 fire
-  if (A9) {
+  if (a9==3) {
     fire.resize(130, 0);
     image(fire, 80, 230+(75*8));
   }
   //A10 fire
-  if (A10) {
+  if (a10==3) {
     fire.resize(130, 0);
     image(fire, 80, 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    B FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //B1 fire
-  if (B1) {
+  if (b1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230);
   }
   //B2 fire
-  if (B2) {
+  if (b2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*1));
   }
   //B3 fire
-  if (B3) {
+  if (b3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*2));
   }
   //B4 fire
-  if (B4) {
+  if (b4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*3));
   }
   //B5 fire
-  if (B5) {
+  if (b5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*4));
   }
   //B6 fire
-  if (B6) {
+  if (b6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*5));
   }
   //B7 fire
-  if (B7) {
+  if (b7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*6));
   }
   //B8 fire
-  if (B8) {
+  if (b8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*7));
   }
   //B9 fire
-  if (B9) {
+  if (b9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*8));
   }
   //B10 fire
-  if (B10) {
+  if (b10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*1), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    C FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //C1 fire
-  if (C1) {
+  if (c1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230);
   }
   //C2 fire
-  if (C2) {
+  if (c2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*1));
   }
   //C3 fire
-  if (C3) {
+  if (c3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*2));
   }
   //C4 fire
-  if (C4) {
+  if (c4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*3));
   }
   //C5 fire
-  if (C5) {
+  if (c5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*4));
   }
   //C6 fire
-  if (C6) {
+  if (c6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*5));
   }
   //C7 fire
-  if (C7) {
+  if (c7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*6));
   }
   //C8 fire
-  if (C8) {
+  if (c8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*7));
   }
   //C9 fire
-  if (C9) {
+  if (c9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*8));
   }
   //C10 fire
-  if (C10) {
+  if (c10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*2), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    D FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //B1 fire
-  if (D1) {
+  if (d1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230);
   }
   //D2 fire
-  if (D2) {
+  if (d2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*1));
   }
   //D3 fire
-  if (D3) {
+  if (d3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*2));
   }
   //D4 fire
-  if (D4) {
+  if (d4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*3));
   }
   //D5 fire
-  if (D5) {
+  if (d5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*4));
   }
   //D6 fire
-  if (D6) {
+  if (d6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*5));
   }
   //D7 fire
-  if (D7) {
+  if (d7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*6));
   }
   //D8 fire
-  if (D8) {
+  if (d8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*7));
   }
   //D9 fire
-  if (D9) {
+  if (d9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*8));
   }
   //D10 fire
-  if (D10) {
+  if (d10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*3), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    E FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //E1 fire
-  if (E1) {
+  if (e1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230);
   }
   //E2 fire
-  if (E2) {
+  if (e2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*1));
   }
   //E3 fire
-  if (E3) {
+  if (e3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*2));
   }
   //E4 fire
-  if (E4) {
+  if (e4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*3));
   }
   //E5 fire
-  if (E5) {
+  if (e5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*4));
   }
   //E6 fire
-  if (E6) {
+  if (e6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*5));
   }
   //E7 fire
-  if (E7) {
+  if (e7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*6));
   }
   //E8 fire
-  if (E8) {
+  if (e8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*7));
   }
   //E9 fire
-  if (E9) {
+  if (e9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*8));
   }
   //E10 fire
-  if (E10) {
+  if (e10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*4), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    F FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //F1 fire
-  if (F1) {
+  if (f1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230);
   }
   //F2 fire
-  if (F2) {
+  if (f2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*1));
   }
   //F3 fire
-  if (F3) {
+  if (f3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*2));
   }
   //F4 fire
-  if (F4) {
+  if (f4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*3));
   }
   //F5 fire
-  if (F5) {
+  if (f5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*4));
   }
   //F6 fire
-  if (F6) {
+  if (f6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*5));
   }
   //F7 fire
-  if (F7) {
+  if (f7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*6));
   }
   //F8 fire
-  if (F8) {
+  if (f8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*7));
   }
   //F9 fire
-  if (F9) {
+  if (f9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*8));
   }
   //F10 fire
-  if (F10) {
+  if (f10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*5), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    G FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //G1 fire
-  if (G1) {
+  if (g1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230);
   }
   //G2 fire
-  if (G2) {
+  if (g2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*1));
   }
   //G3 fire
-  if (G3) {
+  if (g3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*2));
   }
   //G4 fire
-  if (G4) {
+  if (g4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*3));
   }
   //G5 fire
-  if (G5) {
+  if (g5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*4));
   }
   //G6 fire
-  if (G6) {
+  if (g6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*5));
   }
   //G7 fire
-  if (G7) {
+  if (g7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*6));
   }
   //G8 fire
-  if (G8) {
+  if (g8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*7));
   }
   //G9 fire
-  if (G9) {
+  if (g9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*8));
   }
   //G10 fire
-  if (G10) {
+  if (g10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*6), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    H FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //H1 fire
-  if (H1) {
+  if (h1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230);
   }
   //H2 fire
-  if (H2) {
+  if (h2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*1));
   }
   //H3 fire
-  if (H3) {
+  if (h3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*2));
   }
   //H4 fire
-  if (H4) {
+  if (h4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*3));
   }
   //H5 fire
-  if (H5) {
+  if (h5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*4));
   }
   //H6 fire
-  if (H6) {
+  if (h6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*5));
   }
   //H7 fire
-  if (H7) {
+  if (h7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*6));
   }
   //H8 fire
-  if (H8) {
+  if (h8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*7));
   }
   //H9 fire
-  if (H9) {
+  if (h9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*8));
   }
   //H10 fire
-  if (H10) {
+  if (h10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*7), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    I FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //I1 fire
-  if (I1) {
+  if (i1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230);
   }
   //I2 fire
-  if (I2) {
+  if (i2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*1));
   }
   //I3 fire
-  if (I3) {
+  if (i3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*2));
   }
   //I4 fire
-  if (I4) {
+  if (i4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*3));
   }
   //I5 fire
-  if (I5) {
+  if (i5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*4));
   }
   //I6 fire
-  if (I6) {
+  if (i6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*5));
   }
   //I7 fire
-  if (I7) {
+  if (i7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*6));
   }
   //I8 fire
-  if (I8) {
+  if (i8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*7));
   }
   //I9 fire
-  if (I9) {
+  if (i9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*8));
   }
   //I10 fire
-  if (I10) {
+  if (i10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*8), 230+(75*9));
   }
   /////////////////////////////////////////////////////////////    J FIRE IMAGES   //////////////////////////////////////////////////////////////////////
   //J1 fire
-  if (J1) {
+  if (j1==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230);
   }
   //J2 fire
-  if (J2) {
+  if (j2==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*1));
   }
   //J3 fire
-  if (J3) {
+  if (j3==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*2));
   }
   //J4 fire
-  if (J4) {
+  if (j4==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*3));
   }
   //J5 fire
-  if (J5) {
+  if (j5==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*4));
   }
   //J6 fire
-  if (J6) {
+  if (j6==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*5));
   }
   //J7 fire
-  if (J7) {
+  if (j7==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*6));
   }
   //J8 fire
-  if (J8) {
+  if (j8==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*7));
   }
   //J9 fire
-  if (J9) {
+  if (j9==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*8));
   }
   //J10 fire
-  if (J10) {
+  if (j10==3) {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*9));
   }
