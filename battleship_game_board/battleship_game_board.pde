@@ -111,17 +111,6 @@ boolean J10=false;
 
 
 
-boolean flower=false;
-boolean tidy_up=false;
-boolean beer=false;
-boolean mows_lawn=false;
-boolean money=false;
-boolean clothes=false;
-boolean mom=false;
-boolean dad=false;
-boolean sister=false;
-boolean moneybox=false;
-boolean clothesbox=false;
 PImage fire;                                   /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
                                 for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man 
                                 lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
