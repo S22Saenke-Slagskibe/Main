@@ -108,15 +108,15 @@ int j7= 0;
 int j8= 0;
 int j9= 0;
 int j10= 0;
-
-
-PImage fire;                                   /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
+PImage splash;
+PImage fire; /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
  for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man
  lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
 
 void setup() {
-  fuc();
   fire=loadImage("fire.png");
+     splash=loadImage("splash.png");
+ 
 
   background(/*220, 240, 100*/255);
   size(1920, 1080);
@@ -155,12 +155,7 @@ void setup() {
 
 void draw() {
   game_board();
-  int[] ship1 = pship(0);
-  int[] ship2 = pship(1);
-  int[] ship3 = pship(2);
-  int[] ship4 = pship(3);
-  int[] ship5 = pship(4);
-  ild();
+  target_missed();
 }
 
 
@@ -325,7 +320,7 @@ b3=b3+2;
   }
   //c4
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*3)&&y<230+(75*4))) {
-    c4=c4;
+    c4=c4+2;
   }
   //c5
   if ((x>100+(75*2)&&x<100+(75*3))&&(y>230+(75*4)&&y<230+(75*5))) {
@@ -638,4 +633,7 @@ b3=b3+2;
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*9)&&y<230+(75*10))) {
     j10=j10+2;
   }
+
+
+ 
 }
