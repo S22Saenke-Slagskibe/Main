@@ -115,6 +115,7 @@ PImage fire;                                   /* her og i void setup definerer 
  lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
 
 void setup() {
+  fuc();
   fire=loadImage("fire.png");
 
   background(/*220, 240, 100*/255);
@@ -154,7 +155,6 @@ void setup() {
 
 void draw() {
   game_board();
-  fuc();
   int[] ship1 = pship(0);
   int[] ship2 = pship(1);
   int[] ship3 = pship(2);
