@@ -154,9 +154,13 @@ void setup() {
 
 void draw() {
   game_board();
-  
+  fuc();
+  int[] ship1 = pship(0);
+  int[] ship2 = pship(1);
+  int[] ship3 = pship(2);
+  int[] ship4 = pship(3);
+  int[] ship5 = pship(4);
   ild();
-  
 }
 
 
