@@ -155,6 +155,7 @@ void setup() {
 
 void draw() {
   game_board();
+  ild();
   target_missed();
 }
 
