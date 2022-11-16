@@ -117,13 +117,7 @@ void setup() {
   fuc();
   efuc();
   
-  println();
-  for (int i=0; i<10; i++) {
-    for (int j=0; j<10; j++) {
-      print(char(i+65), j+1, eboardm[i][j], " ");
-    }
-    println();
-  }
+
   fire=loadImage("fire.png");
      splash=loadImage("splash.png");
  
@@ -165,6 +159,11 @@ void setup() {
 
 void draw() {
   game_board();
+  int[] ship1 = pship(0);
+  int[] ship2 = pship(1);
+  int[] ship3 = pship(2);
+  int[] ship4 = pship(3);
+  int[] ship5 = pship(4);
   ild();
   target_missed();
 }
