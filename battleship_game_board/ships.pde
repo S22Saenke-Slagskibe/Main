@@ -4,6 +4,11 @@ int[] pship(int j) { //place ships and create shiparray
   int y_ = board[j][1];
   int len_ = board[j][2];
   int dir_ = board[j][3];
+  if(dir_==0){
+    hbaad(x_,y_,len_);
+  } else {
+    vbaad(x_,y_,len_);
+  }
   return ships(x_,y_,len_,dir_);
 }
 void hbaad(int x, int y, int len) { //horizontal båd, parametre: hbaad(startfeltnummer horizontalt (minus 1), startfeltnummer vertikalt (minus 1), længde af båd)
@@ -25,13 +30,11 @@ int[] ships(int x, int y, int len, int dir) { //laver array med feltnumre for al
     for (int i=0; i<len; i++) {
       ship[i*2] = x+i;
       ship[i*2+1] = y;
-      hbaad(x, y, len);
     }
   } else {
     for (int i=0; i<len; i++) {
       ship[i*2] = x;
       ship[i*2+1] = y+i;
-      vbaad(x, y, len);
     }
   }
   return ship;
