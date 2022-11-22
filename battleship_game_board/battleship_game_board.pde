@@ -117,6 +117,8 @@ PImage splash;
 PImage fire; /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
  for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man
  lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
+ PImage victoryss;
+PImage defeatss;
 
 void setup() {
   boardm = fuc();
@@ -125,7 +127,8 @@ void setup() {
 
   fire=loadImage("fire.png");
      splash=loadImage("splash.png");
- 
+     victoryss=loadImage("victoryss.png");
+   defeatss=loadImage("defeatss.png");
 
   background(/*220, 240, 100*/255);
   fullScreen();
@@ -285,7 +288,13 @@ void draw() {
   int[] ship5 = pship(4);
   ild();
   target_missed();
+  if(win==1){
+    image(victoryss,width/2-343,height/2-156);
   
+  }
+  if(win==2){
+   image(defeatss,width/2-433,height/2-160);
+  }
 }
 
 
