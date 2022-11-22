@@ -1,121 +1,126 @@
+int a1;
+int a2;
+int a3;
+int a4;
+int a5;
+int a6;
+int a7;
+int a8;
+int a9;
+int a10;
 
-int a1= 1;
-int a2= 1;
-int a3= 1;
-int a4= 1;
-int a5= 1;
-int a6= 0;
-int a7= 0;
-int a8= 0;
-int a9= 0;
-int a10= 0;
+int b1;
+int b2;
+int b3;
+int b4;
+int b5;
+int b6;
+int b7;
+int b8;
+int b9;
+int b10;
 
-int b1= 0;
-int b2= 0;
-int b3= 0;
-int b4= 0;
-int b5= 0;
-int b6= 0;
-int b7= 0;
-int b8= 0;
-int b9= 0;
-int b10= 0;
+int c1;
+int c2;
+int c3;
+int c4;
+int c5;
+int c6;
+int c7;
+int c8;
+int c9;
+int c10;
 
-int c1= 0;
-int c2= 0;
-int c3= 0;
-int c4= 0;
-int c5= 0;
-int c6= 0;
-int c7= 0;
-int c8= 0;
-int c9= 0;
-int c10= 0;
+int d1;
+int d2;
+int d3;
+int d4;
+int d5;
+int d6;
+int d7;
+int d8;
+int d9;
+int d10;
 
-int d1= 0;
-int d2= 0;
-int d3= 0;
-int d4= 0;
-int d5= 0;
-int d6= 0;
-int d7= 0;
-int d8= 0;
-int d9= 0;
-int d10= 0;
+int e1;
+int e2;
+int e3;
+int e4;
+int e5;
+int e6;
+int e7;
+int e8;
+int e9;
+int e10;
 
-int e1= 0;
-int e2= 0;
-int e3= 0;
-int e4= 0;
-int e5= 0;
-int e6= 0;
-int e7= 0;
-int e8= 0;
-int e9= 0;
-int e10= 0;
+int f1;
+int f2;
+int f3;
+int f4;
+int f5;
+int f6;
+int f7;
+int f8;
+int f9;
+int f10;
 
-int f1= 0;
-int f2= 0;
-int f3= 0;
-int f4= 0;
-int f5= 0;
-int f6= 0;
-int f7= 0;
-int f8= 0;
-int f9= 0;
-int f10= 0;
+int g1;
+int g2;
+int g3;
+int g4;
+int g5;
+int g6;
+int g7;
+int g8;
+int g9;
+int g10;
 
-int g1= 0;
-int g2= 0;
-int g3= 0;
-int g4= 0;
-int g5= 0;
-int g6= 0;
-int g7= 0;
-int g8= 0;
-int g9= 0;
-int g10= 0;
+int h1;
+int h2;
+int h3;
+int h4;
+int h5;
+int h6;
+int h7;
+int h8;
+int h9;
+int h10;
 
-int h1= 0;
-int h2= 0;
-int h3= 0;
-int h4= 0;
-int h5= 0;
-int h6= 0;
-int h7= 0;
-int h8= 0;
-int h9= 0;
-int h10= 0;
+int i1;
+int i2;
+int i3;
+int i4;
+int i5;
+int i6;
+int i7;
+int i8;
+int i9;
+int i10;
 
-int i1= 0;
-int i2= 0;
-int i3= 0;
-int i4= 0;
-int i5= 0;
-int i6= 0;
-int i7= 0;
-int i8= 0;
-int i9= 0;
-int i10= 0;
+int j1;
+int j2;
+int j3;
+int j4;
+int j5;
+int j6;
+int j7;
+int j8;
+int j9;
+int j10;
 
-int j1= 0;
-int j2= 0;
-int j3= 0;
-int j4= 0;
-int j5= 0;
-int j6= 0;
-int j7= 0;
-int j8= 0;
-int j9= 0;
-int j10= 0;
+int win;
+int[][] eboardm = new int[10][10];
+int[][] boardm = new int[10][10];
+int[][] boardm1 = new int[10][10];
+
 PImage splash;
 PImage fire; /* her og i void setup definerer jeg en variabel "fire" som loader en image kun en gang i stedet
  for at gøre det i void draw for hver gang man trykker på en af clickboxes...jeg fand ud af at på den måde undgår man
  lags som opståede da jeg havde skrevet : ,,PImage fire=loadImage(fire.png),, hver han foran resize ind i void draw... (kig på linje 656,662,668 */
 
 void setup() {
-  fuc();
-  efuc();
+  boardm = fuc();
+  eboardm = efuc();
   
 
   fire=loadImage("fire.png");
@@ -153,7 +158,121 @@ void setup() {
   PImage wave= loadImage("wave.png");
   wave.resize(500, 0);
   image(wave, 1000, 50);
+  
+a1= eboardm[0][0];
+a2= eboardm[1][0];
+a3= eboardm[2][0];
+a4= eboardm[3][0];
+a5= eboardm[4][0];
+a6= eboardm[5][0];
+a7= eboardm[6][0];
+a8= eboardm[7][0];
+a9= eboardm[8][0];
+a10= eboardm[9][0];
+
+b1= eboardm[0][1];
+b2= eboardm[1][1];
+b3= eboardm[2][1];
+b4= eboardm[3][1];
+b5= eboardm[4][1];
+b6= eboardm[5][1];
+b7= eboardm[6][1];
+b8= eboardm[7][1];
+b9= eboardm[8][1];
+b10= eboardm[9][1];
+
+c1= eboardm[0][2];
+c2= eboardm[1][2];
+c3= eboardm[2][2];
+c4= eboardm[3][2];
+c5= eboardm[4][2];
+c6= eboardm[5][2];
+c7= eboardm[6][2];
+c8= eboardm[7][2];
+c9= eboardm[8][2];
+c10= eboardm[9][2];
+
+d1= eboardm[0][3];
+d2= eboardm[1][3];
+d3= eboardm[2][3];
+d4= eboardm[3][3];
+d5= eboardm[4][3];
+d6= eboardm[5][3];
+d7= eboardm[6][3];
+d8= eboardm[7][3];
+d9= eboardm[8][3];
+d10= eboardm[9][3];
+
+e1= eboardm[0][4];
+e2= eboardm[1][4];
+e3= eboardm[2][4];
+e4= eboardm[3][4];
+e5= eboardm[4][4];
+e6= eboardm[5][4];
+e7= eboardm[6][4];
+e8= eboardm[7][4];
+e9= eboardm[8][4];
+e10= eboardm[9][4];
+
+f1= eboardm[0][5];
+f2= eboardm[1][5];
+f3= eboardm[2][5];
+f4= eboardm[3][5];
+f5= eboardm[4][5];
+f6= eboardm[5][5];
+f7= eboardm[6][5];
+f8= eboardm[7][5];
+f9= eboardm[8][5];
+f10= eboardm[9][5];
+
+g1= eboardm[0][6];
+g2= eboardm[1][6];
+g3= eboardm[2][6];
+g4= eboardm[3][6];
+g5= eboardm[4][6];
+g6= eboardm[5][6];
+g7= eboardm[6][6];
+g8= eboardm[7][6];
+g9= eboardm[8][6];
+g10= eboardm[9][6];
+
+h1= eboardm[0][7];
+h2= eboardm[1][7];
+h3= eboardm[2][7];
+h4= eboardm[3][7];
+h5= eboardm[4][7];
+h6= eboardm[5][7];
+h7= eboardm[6][7];
+h8= eboardm[7][7];
+h9= eboardm[8][7];
+h10= eboardm[9][7];
+
+i1= eboardm[0][8];
+i2= eboardm[1][8];
+i3= eboardm[2][8];
+i4= eboardm[3][8];
+i5= eboardm[4][8];
+i6= eboardm[5][8];
+i7= eboardm[6][8];
+i8= eboardm[7][8];
+i9= eboardm[8][8];
+i10= eboardm[9][8];
+
+j1= eboardm[0][9];
+j2= eboardm[1][9];
+j3= eboardm[2][9];
+j4= eboardm[3][9];
+j5= eboardm[4][9];
+j6= eboardm[5][9];
+j7= eboardm[6][9];
+j8= eboardm[7][9];
+j9= eboardm[8][9];
+j10= eboardm[9][9];
+test(boardm);
 }
+
+
+
 
 
 
@@ -166,6 +285,7 @@ void draw() {
   int[] ship5 = pship(4);
   ild();
   target_missed();
+  
 }
 
 
@@ -643,7 +763,8 @@ void mouseClicked() {
   if ((x>100+(75*9)&&x<100+(75*10))&&(y>230+(75*9)&&y<230+(75*10))) {
     j10=j10+2;
   }
+  
+  win();
+  boardm = npc();
 
-
- 
 }

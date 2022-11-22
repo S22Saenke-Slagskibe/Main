@@ -1,14 +1,7 @@
-int[][] enemy1 = {
-  {1, 1, 5, 0},
-  {6, 3, 3, 0},
-  {3, 3, 4, 1},
-  {1, 8, 2, 0},
-  {8, 5, 3, 1}
-};
-int[][] eboardm = new int[10][10];
+
 int[][] eboard = new int[5][4];
 
-void efuc() { //choose random board
+int[][] efuc() { //choose random board
   int boardnum = int(random(1, 7));
 if (boardnum==1) {
     for (int i=0; i<5; i++) {
@@ -49,12 +42,9 @@ if (boardnum==1) {
   }
   int[][] eboardm = resboard(eboard);
   println();
-  for (int i=0; i<10; i++) {
-    for (int j=0; j<10; j++) {
-      print(char(i+65), j+1, eboardm[i][j], " ");
-    }
-    println();
-  }
+  test(eboardm);
+  println(boardnum);
+  return(eboardm);
 }
 
 
@@ -69,20 +59,22 @@ int[][] resboard(int[][] array) {
   for(int i=0;i<(en1.length/2);i++) {
     resboard[en1[i*2+1]][en1[2*i]] = 1;
   }
+  println();
   for(int i=0;i<(en2.length/2);i++) {
     resboard[en2[2*i+1]][en2[2*i]] = 1;
   }
+  println();
   for(int i=0;i<(en3.length/2);i++) {
     resboard[en3[2*i+1]][en3[2*i]] = 1;
   }
+  println();
   for(int i=0;i<(en4.length/2);i++) {
     resboard[en4[2*i+1]][en4[2*i]] = 1;
   }
+  println();
   for(int i=0;i<(en5.length/2);i++) {
     resboard[en5[2*i+1]][en5[2*i]] = 1;
   }
-  for (int i=0;i<en1.length;i++){
-    print(en1[i]);
-  }
+
   return resboard;
 }
