@@ -48,7 +48,7 @@ int[][] board6 = {
   {8, 5, 2, 1}
 };
 
-void fuc() { //choose random board
+int[][] fuc() { //choose random board
   int boardnum = int(random(1, 7));
   if (boardnum==1) {
     for (int i=0; i<5; i++) {
@@ -87,4 +87,7 @@ void fuc() { //choose random board
       }
     }
   }
+  int[][] boardm = resboard(board); 
+  test(boardm);
+  return (boardm);
 }

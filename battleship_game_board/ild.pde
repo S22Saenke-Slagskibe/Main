@@ -514,4 +514,12 @@ void ild() {
     fire.resize(130, 0);
     image(fire, 80+(75*9), 230+(75*9));
   }
+  for(int i = 0; i < 10; i++){
+    for(int j = 0; j < 10; j++){
+      if (boardm [i][j] == 3){
+        fire.resize(130, 0);
+        image(fire, 1030+(75*j), 230+(75*i));
+      }
+    }
+  }
 }
