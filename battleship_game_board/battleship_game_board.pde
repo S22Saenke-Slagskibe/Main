@@ -271,7 +271,6 @@ j7= eboardm[6][9];
 j8= eboardm[7][9];
 j9= eboardm[8][9];
 j10= eboardm[9][9];
-test(boardm);
 }
 
 

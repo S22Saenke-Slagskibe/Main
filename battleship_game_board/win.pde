@@ -325,13 +325,3 @@ void ewin(int[][] array){
   print("lost");
   win = 2;
 }
-
-void test(int[][] array){
-  println();
-  for (int i=0; i<10; i++) {
-    for (int j=0; j<10; j++) {
-      print(i+1,char(j+65), array[i][j], " ");
-    }
-    println();
-  }
-}

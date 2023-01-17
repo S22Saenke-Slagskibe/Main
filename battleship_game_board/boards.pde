@@ -88,6 +88,5 @@ int[][] fuc() { //choose random board
     }
   }
   int[][] boardm = resboard(board); 
-  test(boardm);
   return (boardm);
 }

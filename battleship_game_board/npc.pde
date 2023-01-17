@@ -13,7 +13,6 @@ int[][] npc(){
       boardm[row][colm] = 2;
     }
   }
-  test(boardm);
   ewin(boardm);
   return boardm;
 }
