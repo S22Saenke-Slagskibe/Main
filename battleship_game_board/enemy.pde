@@ -42,7 +42,6 @@ if (boardnum==1) {
   }
   int[][] eboardm = resboard(eboard);
   println();
-  test(eboardm);
   println(boardnum);
   return(eboardm);
 }
